@@ -1,0 +1,78 @@
+.main {
+    background-color: rgb(230, 235, 237);
+    border: 1px solid navy;
+}
+
+
+.main {
+    text-align: justify;
+    padding: 10px 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.left-half, .right-half, .abstract {
+    border: 0px;
+    padding-right: 20px;
+}
+
+/* Font Choices */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Sizes */
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Color Choices */
+h1 {
+    color: #333; /* Dark gray */
+}
+
+h2 {
+    color: #555; /* Slightly lighter gray */
+}
+
+p {
+    color: #666; /* Even lighter gray */
+}
+
+/* Margin and Padding Choices */
+body {
+    margin: 20px;
+}
+
+.main {
+    padding: 20px;
+}
+
+/* Additional Styles */
+.hr {
+    border: none;
+    border-top: 1px solid #ccc; /* Light gray */
+}
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font Choices */
+body {
+    font-family: Arial, sans-serif;
+}
