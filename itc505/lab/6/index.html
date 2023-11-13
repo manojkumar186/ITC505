@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Grail Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Leap Year Calculator</h1>
+  </header>
+
+  <aside>
+    <nav>
+      <ul class="menu">
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item"><a href="#">Research</a></li>
+        <li class="menu-item"><a href="#">News</a></li>
+        <li class="menu-item"><a href="#">Teaching</a></li>
+        <li class="menu-item"><a href="#">contact</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  <main>
+    <div id="laepYearCalculator">
+      <label for="dobInput">Enter your Date of Birth:</label>
+      <input type="date" id="dobInput">
+      <br><br />
+      <button id="tellMeBtn" onclick="calculateDay()">Is my birthday on a leap year?</button>
+      <p id="result"></p>
+    </div>
+  </main>
+
+  <aside>
+    <div class="news-advertisements">
+      <div class="advertisement">
+        <h3>NAU</h3>
+        <a href="https://www.amazon.com/Northern-Arizona-Lumberjacks-Distressed-Primary/dp/B0BXR42BXL/ref=sr_1_2?crid=14FL1ZCWL18FR&keywords=nau+t-shirt&qid=1699905194&sprefix=nau+t-shirta%2Caps%2C131&sr=8-2"
+          target="_blank">
+          <img
+            src="https://m.media-amazon.com/images/I/A1vJUKBjc2L._CLa%7C2140%2C2000%7C81Ah8qpFkGL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679_.png"
+            alt="Advertisement 1">
+        </a>
+        <p>NAU T-Shirt is now only $23.99 only.</p>
+      </div>
+
+      <div class="advertisement">
+        <h3>Lumberjack Stickers</h3>
+        <a href="https://www.amazon.com/Northern-Arizona-University-Lumberjacks-Scrapbook/dp/B08XS8F4KR/ref=sr_1_2?crid=1HNG9CZJRT9XG&keywords=nau+water+bottle&qid=1699905456&sprefix=NAU+bottle%2Caps%2C140&sr=8-2"
+          target="_blank">
+          <img src="https://m.media-amazon.com/images/I/71swFbbywTS._AC_SX679_.jpg" alt="Advertisement 2">
+        </a>
+        <p>Go Lumberjacks stickers are now $9 only.</p>
+      </div>
+    </div>
+  </aside>
+
+  <footer>
+    <h1>Leap Year Calculator Addendum</h1>
+    <h2>Problem Solved:</h2>
+    <p>The JavaScript code determines whether the provided date of birth corresponds to a leap year.</p>
+
+    <h2>Overview of Solution:</h2>
+    <ul>
+        <li>**Input Validation:** Checks if the entered date is valid.</li>
+        <li>**Leap Year Calculation:** Determines if the year of the provided date is a leap year.</li>
+        <li>**Display Result:** Shows a message indicating whether the birth year is a leap year.</li>
+    </ul>
+
+    <h2>Difficulties Encountered:</h2>
+    <ul>
+        <li>**Ensuring Valid Input:** Validating the input date to handle potential errors like incorrect formats or invalid dates.</li>
+        <li>**Leap Year Logic:** Ensuring the correct leap year calculation using the logical conditions (divisibility by 4, 100, and 400).</li>
+    </ul>
+
+    <h2>Solutions to Difficulties:</h2>
+    <ul>
+        <li>**Input Validation:** Utilized `isNaN(selectedDate.getTime())` to confirm a valid date entry.</li>
+        <li>**Leap Year Logic:** Employed conditional statements `(year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)` to accurately determine leap years.</li>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
