@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personality Adventure</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personality Adventure Game</h1>
+    </header>
+
+    <main class="container">
+        <div id="game-setup">
+            <p>Welcome to the Personality Adventure Game! Are you ready?</p>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+        <div class="story" style="display: none;">
+            <p id="story-text">Story text will go here.</p>
+            <div class="choices">
+                <!-- Buttons for choices will go here -->
+            </div>
+            <div class="image">
+                <img id="story-image" src="default-image.jpg" alt="Image" width="500" height="300">
+            </div>
+            <div class="restart">
+                <!-- Buttons for choices will go here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Development Process</h2>
+            <p>Developing the "Personality Adventure" involved a systematic approach to building an interactive narrative experience using HTML, CSS, and JavaScript.</p>
+            <p>Starting with the structure, the HTML was organized to create distinct sections for the game setup and story progression. CSS was applied to enhance the visual elements, ensuring a pleasant and engaging user interface. The JavaScript was used to manage the game flow, implementing a story object with various stages and their respective outcomes.</p>
+        </section>
+
+        <section>
+            <h2>Challenges Faced</h2>
+            <p>One of the major challenges was structuring the multiple pathways of the story to converge on eight distinct endings. Ensuring each choice led to a coherent and conclusive end required meticulous planning and implementation. Additionally, selecting appropriate images to complement each stage while maintaining a coherent visual narrative posed its own challenge.</p>
+        </section>
+
+        <section>
+            <h2>Insights and Creative Choices</h2>
+            <p>The color scheme choice, predominantly a calming blue, was made to foster a relaxed and engaging atmosphere, suitable for a personality test. The image selection process aimed to reinforce the narrative and emotional context at each stage, promoting a more immersive experience for the player.</p>
+            <p>Insights gained included the criticality of engaging visuals, concise yet relatable text, and the importance of flexibility in storytelling to accommodate diverse user choices.</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
